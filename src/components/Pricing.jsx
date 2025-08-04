@@ -2,20 +2,20 @@ import React from "react";
 
 const Pricing = () => {
   const pricingPlans = [
+    // {
+    //   name: "Giúp việc theo giờ",
+    //   price: "80.000",
+    //   duration: "1 giờ",
+    //   features: [
+    //     "Quét nhà, lau nhà",
+    //     "Lau bụi đồ đạc",
+    //     "Dọn dẹp phòng tắm",
+    //     "Đổ rác",
+    //   ],
+    //   popular: false,
+    // },
     {
-      name: "Giúp việc theo giờ",
-      price: "80.000",
-      duration: "1 giờ",
-      features: [
-        "Quét nhà, lau nhà",
-        "Lau bụi đồ đạc",
-        "Dọn dẹp phòng tắm",
-        "Đổ rác",
-      ],
-      popular: false,
-    },
-    {
-      name: "Giúp việc ở lại",
+      name: "Khách hàng chỉ cần trả cho Cô Tấm Giúp Việc",
       price: "110.000",
       duration: "1 giờ",
       features: [
@@ -52,7 +52,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 justify-items-center gap-8">
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
