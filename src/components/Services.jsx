@@ -43,8 +43,11 @@ const Services = () => {
             Dịch Vụ Của Chúng Tôi
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Cô Tấm cung cấp đa dạng dịch vụ giúp việc nhà chất lượng cao, đáp
-            ứng mọi nhu cầu của gia đình bạn
+            Chúng tôi cung cấp dịch vụ kết nối người giúp việc nhà đáng tin cậy,
+            được cá nhân hóa theo nhu cầu của từng gia đình. Tập trung vào mối
+            quan hệ lâu dài, chúng tôi giúp người giúp việc hiểu rõ thói quen
+            sinh hoạt để mang lại hiệu quả và sự an tâm vượt trội cho khách
+            hàng.
           </p>
         </div>
 

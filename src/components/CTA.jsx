@@ -79,7 +79,7 @@ const CTA = () => {
             </div>
           </div>
           <div
-            className="row-start-1 bg-[linear-gradient(to_bottom_right,rgba(113,157,205,0.35),rgb(52,115,184,0.35)),url('/img/eating.jpg')] h-64 sm:h-auto bg-cover bg-center rounded-r-xl"
+            className="row-start-1 bg-[linear-gradient(to_bottom_right,rgba(113,157,205,0.35),rgb(52,115,184,0.35)),url('/img/cta_2.jpg')] h-64 sm:h-auto bg-cover bg-center rounded-r-xl"
             role="img"
           ></div>
         </div>

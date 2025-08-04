@@ -3,9 +3,9 @@ import React from "react";
 const Pricing = () => {
   const pricingPlans = [
     {
-      name: "Dọn dẹp cơ bản",
-      price: "150.000",
-      duration: "2 giờ",
+      name: "Giúp việc theo giờ",
+      price: "80.000",
+      duration: "1 giờ",
       features: [
         "Quét nhà, lau nhà",
         "Lau bụi đồ đạc",
@@ -15,9 +15,9 @@ const Pricing = () => {
       popular: false,
     },
     {
-      name: "Dọn dẹp tiêu chuẩn",
-      price: "250.000",
-      duration: "3 giờ",
+      name: "Giúp việc ở lại",
+      price: "110.000",
+      duration: "1 giờ",
       features: [
         "Tất cả dịch vụ cơ bản",
         "Lau cửa sổ, cửa kính",
@@ -26,18 +26,18 @@ const Pricing = () => {
       ],
       popular: true,
     },
-    {
-      name: "Dọn dẹp cao cấp",
-      price: "400.000",
-      duration: "5 giờ",
-      features: [
-        "Tất cả dịch vụ tiêu chuẩn",
-        "Vệ sinh nhà bếp sâu",
-        "Giặt ủi toàn bộ",
-        "Nấu 1 bữa ăn",
-      ],
-      popular: false,
-    },
+    // {
+    //   name: "Dọn dẹp cao cấp",
+    //   price: "400.000",
+    //   duration: "5 giờ",
+    //   features: [
+    //     "Tất cả dịch vụ tiêu chuẩn",
+    //     "Vệ sinh nhà bếp sâu",
+    //     "Giặt ủi toàn bộ",
+    //     "Nấu 1 bữa ăn",
+    //   ],
+    //   popular: false,
+    // },
   ];
 
   return (
@@ -52,21 +52,21 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
               className={`rounded-xl p-8 shadow-md hover:shadow-lg duration-150 ease-in transform ${
                 plan.popular
-                  ? "bg-pre-shade text-white -translate-y-4 hover:-translate-y-5"
+                  ? "bg-pre-shade text-white hover:-translate-y-1"
                   : "bg-white hover:-translate-y-1"
               }`}
             >
-              {plan.popular && (
-                <div className="bg-yellow-300 text-blue-900 text-xs font-extrabold px-3 py-1 rounded-full inline-block mb-4">
+              {/* {plan.popular && (
+                <div className="absolute -translate-y-6 -translate-x-4 bg-yellow-300 text-blue-900 text-xs font-extrabold px-3 py-1 rounded-full inline-block mb-4">
                   PHỔ BIẾN
                 </div>
-              )}
+              )} */}
               <h3
                 className={`text-2xl font-bold mb-2 ${
                   plan.popular ? "text-white" : "text-gray-800"
@@ -108,7 +108,7 @@ const Pricing = () => {
                 ))}
               </ul>
               <button
-                className={`w-full py-3 rounded-full font-medium ${
+                className={` w-full py-3 rounded-full font-medium ${
                   plan.popular
                     ? "bg-white text-shade hover:bg-gray-100"
                     : "bg-primary text-white hover:bg-shade"

@@ -12,8 +12,9 @@ const Hero = () => {
             </p>
           </h1>
           <p className="text-gray-600 mb-10">
-            Cô Tấm giúp việc - Để Cô Tấm cùng chăm sóc tổ ấm của bạn. Dịch vụ uy
-            tín, chất lượng với đội ngũ nhân viên được đào tạo bài bản.
+            Chúng tôi cung cấp dịch vụ vệ sinh nhà ở cá nhân hóa, kết nối các
+            gia đình bận rộn với nhân viên vệ sinh chuyên nghiệp, phù hợp với
+            từng nhu cầu và phong cách sống.
           </p>
           <div className="flex space-x-5 justify-center lg:justify-start">
             <button className="btn px-2 py-4">Đặt dịch vụ ngay</button>
@@ -24,10 +25,13 @@ const Hero = () => {
         </div>
         <div className="lg:w-1/2">
           <picture>
-            <source srcset="img/hero.webp" type="image/webp" />
-            <source srcset="img/hero-min.png" type="image/png" />
+            {/* <source srcset="img/hero.webp" type="image/webp" /> */}
+            <source srcset="img/co-tam-giup-viec_1.jpg" type="image/png" />
 
-            <img src="img/hero-min.png" alt="Người phụ nữ đang làm việc nhà" />
+            <img
+              src="img/co-tam-giup-viec_1.jpg"
+              alt="Người phụ nữ đang làm việc nhà"
+            />
           </picture>
         </div>
       </div>
